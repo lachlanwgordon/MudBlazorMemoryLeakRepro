@@ -1,0 +1,15 @@
+﻿@page "/"
+
+@*This MudSelect causes page to stay in memory stack forever*@
+
+<MudBlazor.MudSelect T="@String" ValueChanged="TestMethod"/>
+
+@*This MudSelect does not cause any problems*@
+<MudBlazor.MudSelect T="@String" />
+
+
+@code {
+    private async Task TestMethod()
+    {
+    }
+}
